@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+
+<!-- The following line imports a text font using Google’s library of fonts: -->
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+<style> 
+	body {					                                                       /*Style for the body */
+		background-color: #ffffff; font-family: 'Raleway';
+	}
+	h1 {								            /*Style for the title text*/
+		font-size: 48px; font-weight: bold; 
+		color: #008080;
+		position: absolute; left: 120px; top: -19px;
+	}
+	p {	                                                                               /*Style for the parameter heading text */							
+		position: absolute; left: 20px; right: 20px; top: -22px; 
+                          color: #008080; font-size: 39px;
+	}
+
+             .text {							                    /*Style for the section text*/
+		position: absolute; left: 20px; right: 20px; top: 0px;
+		color: #008080; font-size: 24px; line-height: 25px;
+	}
+	.rounded-square { 				                                /*Design for the title block*/
+		width: 825px; height: 80px; background-color: #78dead;
+		border-radius: 10px; margin-left: auto; margin-right: auto; margin-top: 55px; 
+                	position: relative; z-index: -1;
+	}
+	.square_temp { 				   /*Design for the “Water Temperature” heading block*/
+		width: 750px; height: 80px; background-color: #78dead;
+		position: relative; margin-left: auto; margin-right: auto; margin-top: 25px;
+		z-index: -1; border-radius: 40px;
+	}
+	.square_light { 			       /*Design for the “Ambient Light Intensity” heading block */
+		width: 750px; height: 80px; background-color: #78dead;
+		position:  relative; margin-left: auto; margin-right: auto; margin-top: 290px;
+		z-index: -1; border-radius: 40px;
+	}
+	.square_clarity { 		                          /*Design for the “Water Clarity” heading block*/
+		width: 750px; height: 80px; background-color: #78dead;
+		position: relative; margin-left: auto; margin-right: auto; margin-top: 290px;
+		z-index: -1; border-radius: 40px;
+	}
+	.square_text {							    /*Design for the text blocks*/
+		width: 750px; height: 220px; background-color: #ffffff;
+		position: absolute; left: auto; right: 0px; top: 100px;
+		z-index: -2; border-radius: 10px; border-color: #a9ddeb ; border-style: outset;
+	}
+             .dotred {                                                                               /*Properties of the red indicator circle*/
+                	height: 30px; width: 30px; border-radius: 50%; display: inline-block; 
+background-color: red; position: absolute; right: 50px; top: 25px; font-size: 25px;
+line-height: 30px; text-align: center; color: white;
+          }
+          .dotgreen{                                                                           /*Properties of the green indicator circle*/
+                	height: 30px; width: 30px; border-radius: 50%; display: inline-block; 
+background-color: green; position: absolute; right: 50px; top: 25px; font-size: 25px;
+line-height: 30px; text-align: center; color: white;
+          }	
+</style>
+</head>
+
+<body>
+
+<!-- Creating the title block with the accompanying title text:  -->
+<div class="rounded-square">                      
+<h1>Smart Aquaponics System</h1> 
+</div>
+
+<!-- Creating the “Water Temperature” heading:  -->
+<div class="square_temp">
+	<p class="text-block">Water Temperature</p>
+
+	<!--Importing a fish icon to be placed in the “Water Temperature” heading block:  -->
+             <img src="https://cdn-icons-png.freepik.com/512/1536/1536173.png" height="60px;"
+style="position:absolute; left:370px; top: 13px;"/>
+
+<!--Creating a red indicator circle with a bold exclamation mark in the middle:  -->
+        	<span class="dotred"><b>!</b></span>
+
+ 	<!--Creating a text block below the “Water Temperature” heading:  -->
+	<div class="square_text">
+
+	<!-- Creating the alert message displayed underneath the “Water Temperature” heading:  -->
+		<p class="text"><b>ALERT: Water temperature is extremely high for the fish! </b>
+<br><br><br> Advised Action: Please examine the fish tank and 
+<br><br> decrease temperature to prevent harm to the fish.  </p>
+	</div>
+</div>
+
+<!-- Creating the “Ambient Light Intensity” heading:  -->
+<div class="square_light">
+	<p class="text-block">Ambient Light Intensity</p>
+
+	<!-- Importing a plant icon to be placed in the “Ambient Light Intensity” heading block: -->
+<img src="https://static.thenounproject.com/png/26892-200.png" height="45px";
+style="transform: scaleX(-1); position:absolute; left:444px; top: 15px;" />
+
+<!--Creating a red indicator circle with a bold exclamation mark in the middle:  -->
+<span class="dotred"><b>!</b></span>
+
+<!-- Creating the alert message displayed underneath the “Ambient Light Intensity” heading:  -->
+	<div class="square_text">
+		<p class="text"> <b>ALERT: Light intensity is extremely low for the plants! </b>
+<br><br><br> Advised Action: Please examine the lighting setup and increase
+<br><br>light intensity for optimal plant growth.</p>
+	</div>
+</div>
+
+
+
+<!-- Creating the “Water Clarity” heading:  -->
+<div class="square_clarity">
+	<p class="text-block">Water Clarity</p>
+
+	<!-- Importing a fish icon to be placed in the “Water Clarity ” heading block: -->
+           <img src="https://cdn-icons-png.freepik.com/512/1536/1536173.png" height="60px;"
+style="position:absolute; left:255px; top: 13px;"/>
+
+<!--Creating a green indicator circle with a check mark in the middle:  -->
+<span class="dotgreen">&#x2713</span>
+
+<!-- Creating the message displayed underneath the “Water Clarity” heading:  -->
+	<div class="square_text">
+		<p class="text"><b>No issues or abnormalities detected. </b> <br><br><br> Advised
+Action: None. Water clarity is at an optimal level. </p>
+	</div>
+</div>
+
+</body>
+</html>
